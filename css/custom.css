@@ -1,0 +1,1317 @@
+/*********************************
+     Header css start here
+**********************************/
+.navbar-brand img {
+    width: 80px;
+}
+header.main-header .header-sticky {
+    padding: 15px 0;
+    background: #22222200;
+    border: none;
+}
+.rightSide ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+.rightSide ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.loginOption {
+    color: #fff;
+}
+.loginOption iconify-icon {
+    font-size: 24px;
+}
+.merchantBtn {
+    padding: 7px 13px;
+    background: #b48b4c;
+    color: #ffffff;
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+    /* border: 1px solid #000; */
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+/* Create the animated fill effect */
+.merchantBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #daae6c; /* cream color */
+    z-index: -1;
+    transition: width 0.5s ease;
+    border-radius: 5px;
+}
+
+.merchantBtn:hover::before {
+    width: 100%;
+}
+
+.merchantBtn:hover {
+    color: #fff; /* keep text color readable */
+   
+}
+header.main-header .header-sticky.active {
+    background: #000;
+}
+header.main-header .header-sticky.hide {
+    padding: 10px 0;
+}
+/*********************************
+     Header css End here
+**********************************/
+
+
+/*********************************
+   Banner Video Css Start here
+**********************************/
+.banner_vdo {
+    height: 80vh;
+    overflow-y: hidden;
+    position: relative;
+    border-radius: 0;
+}
+.resolutions-hero-slider video {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+header.main-header {
+    position: absolute;
+    width: 100%;
+}
+.banner_vdo::before {
+    content: '';
+    background: rgb(0 0 0 / 77%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0) 120%); */
+}
+.bannerContent {
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.bannerContent p {
+    color: #dadada;
+}
+.typeTitle {
+    color: #fff;
+    font-size: 50px;
+}
+span#typed {
+    font-family: "Lobster Two", sans-serif;
+    color: #ffe9ca;
+}
+ul.categoryList {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: center;
+    /* background: #ffffff24; */
+    padding: 13px 0;
+    /* backdrop-filter: blur(12px); */
+}
+.CategoryBusiness {
+    position: absolute;
+    bottom: 180px;
+    z-index: 2;
+    width: 100%;
+}
+ul.categoryList li a {
+    padding: 15px 20px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+ul.categoryList li a img {
+    filter: invert(1);
+    width: 26px;
+}
+ul.categoryList li a:hover {
+    /* background: #ffe9ca;
+    color: #000; */
+    border-bottom: 1px solid #fff;
+}
+/*********************************
+   Banner Video Css End here
+**********************************/
+
+
+
+
+/*********************************
+   Specialist Css start here
+**********************************/
+section.SpecialistWrapper {
+    padding: 60px 0;
+}
+h3.subTitleSpecialist {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #000;
+}
+ /* Card styling inspired by your image */
+  .profile-card {
+    border: 1px solid #e6e6e6;
+    border-radius: 50px 50px 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+    .profile-img {
+      position: relative;
+      height: 300px;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* rating bubble in top-right */
+    .rating-bubble {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .rating-bubble .small {
+      font-size: 0.75rem;
+      opacity: 0.9;
+    }
+
+   .profile-card .card-body {
+    padding: 20px  25px;
+    background: #f5f5f5;
+}
+
+   .name-row {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0;
+}
+.name-row h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+}
+    .reviews {
+      font-size: 0.85rem;
+      color:#6c757d;
+    }
+
+.address {
+    font-size: 13px;
+    color: #666;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+}
+
+
+ .promoted {
+    display: inline-block;
+    font-size: 12px;
+    color: #7f7f7f;
+    /* padding: 0px 12px; */
+    border-radius: 999px;
+    /* border: 1px solid #e0e0e0; */
+    /* background: #fafafa; */
+    margin-bottom: 0;
+    align-self: flex-start;
+}
+
+    .like-btn {
+      border-radius: 50%;
+      width:36px;
+      height:36px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border:1px solid #e6e6e6;
+      background:white;
+    }
+.socialMedia a {
+    color: #b48b4c;
+    font-size: 20px;
+    padding: 5px;
+    display: inline-flex;
+}
+.profile-card a.btn.btn-sm.btn-outline-primary {
+    color: #b48b4c;
+    border: 1px solid #b48b4c;
+    background: #f6f6f6;
+}
+    /* small responsive tweaks */
+    @media (min-width: 768px) {
+.profile-card .card-body {
+    padding: 25px;
+    background: #f5f5f5;
+}
+    }
+/* * Smooth zoom-in effect on image hover */ 
+.profile-card .profile-img {
+  overflow: hidden; /* ensure image doesn't overflow its container */
+}
+
+.profile-card .profile-img img {
+  transition: transform 0.6s ease; /* smooth transition */
+}
+
+.profile-card:hover .profile-img img {
+  transform: scale(1.1); /* zoom in slightly */
+}
+.viewProfileBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #000000;
+    color: #000000;
+    border-radius: 50px;
+    overflow: hidden;
+    background: transparent;
+    transition: color 0.3s ease;
+    border-radius: 30px 30px 4px 30px;
+}
+
+/* Create the "water" overlay */
+.viewProfileBtn::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 100%;
+  left: -50%;
+  background: #b48b4c;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  z-index: 0;
+}
+
+/* Hover: water rises up and fills the button */
+.viewProfileBtn:hover::before {
+  top: 0%;
+}
+
+/* Keep icon above the "water" layer */
+.viewProfileBtn iconify-icon {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+/* Optional: change icon color when hovered */
+.viewProfileBtn:hover{
+    border:1px solid #b48b4c;
+}
+.viewProfileBtn:hover iconify-icon {
+  color: white;
+}
+
+/*********************************
+   Specialist Css End here
+**********************************/
+
+/*********************************
+   About us Css Start here
+**********************************/
+.about-us-section {
+    padding: 60px 0;
+    background: #f7f7f7;
+}
+.about-year {
+    width: 100%;
+    padding: 9px;
+    background-color: #b48b4c;
+    text-align: center;
+    border-radius: 50px 50px 0 50px;
+    margin-bottom: 6px;
+}
+/*********************************
+   About us Css End here
+**********************************/
+
+/*********************************
+  Home service Css Start here
+**********************************/
+
+.home-services {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+/*********************************
+Home Service  Css End here
+**********************************/
+
+/*********************************
+  Why Choose Css Start here
+**********************************/
+.why-choose-us {
+    padding: 60px 0;
+    background: #f7f7f7;
+}
+/*********************************
+  Why Choose Css End here
+**********************************/
+
+
+/*********************************
+   Fun Facts Css Start here
+**********************************/
+.fun-facts {
+    background: #ffffff;
+    padding: 60px 0;
+}
+/*********************************
+   Fun Facts Css End here
+**********************************/
+
+
+/*********************************
+   Photo gallery Css Start here
+**********************************/
+
+.photo-gallery {
+    padding: 60px 0;
+    background: #000000;
+}
+
+.photo-gallery .section-title h3 {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    color: #a88247;
+    position: relative;
+    z-index: 2;
+}
+.photo-gallery .section-title h1, .photo-gallery .section-title h2 {
+    font-size: 50px;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+.photo-gallery  .section-title h3:before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 20px 20px 4px 20px;
+    position: absolute;
+    left: -4px;
+    top: -5px;
+    z-index: -1;
+    animation: shapemove 2s infinite linear alternate;
+}
+.photo-gallery-item img {
+    width: 100%;
+    filter: unset;
+    border-radius: 50px 50px 50px 10px;
+    transition: var(--transition);
+}
+/*********************************
+   Photo gallery Css End here
+**********************************/
+
+/*********************************
+   Gift Card Css start here
+**********************************/
+
+.gift-cards {
+    padding: 60px 0;
+}
+.gift-box .gift-image img {
+    margin-top: -10px;
+    margin-bottom: -50px;
+    position: relative;
+    right: -20px;
+    filter: unset;
+    transition: var(--transition);
+}
+/*********************************
+   Gift Card Css End here
+**********************************/
+
+/*********************************
+   Testimonial Css start here
+**********************************/
+.testimonials {
+    padding: 60px 0;
+    background: var(--secondary-color);
+}
+/*********************************
+   Testimonial Css End here
+**********************************/
+
+/*********************************
+   blog Css start here
+**********************************/
+.latest-posts {
+    padding: 60px 0;
+}
+.post-featured-image figure {
+    height: 300px;
+}
+.post-featured-image figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*********************************
+   blog Css End here
+**********************************/
+
+.footer-logo img {
+    width: 100px;
+}
+.contact-info-item a {
+    color: #fff;
+}
+
+
+/*********************************************
+ Salon Specialist Profile page css Start here
+*********************************************/
+.SalonSp {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    padding-top: 85px;
+    padding-bottom: 50px;
+}
+.connectBtns a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px !important;
+    font-size: 14px !important;
+    margin-right: 0 !important;
+}
+.connectBtns a iconify-icon {
+    font-size: 18px;
+}
+
+.bioSp p {
+    margin: 0 !important;
+    font-size: 14px !important;
+}
+        .SalonSp .navbar {
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1rem 0;
+        }
+
+        .SalonSp .breadcrumb {
+            background: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .SalonSp .breadcrumb-item + .breadcrumb-item::before {
+            content: "›";
+            color: #666;
+        }
+
+        .SalonSp .breadcrumb-item a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .SalonSp .breadcrumb-item.active {
+            color: #333;
+            font-weight: 500;
+        }
+
+        .SalonSp .login-link {
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .SalonSp .profile-header {
+            padding: 2rem 0;
+        }
+
+        .SalonSp .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f0f0f0;
+}
+
+      .SalonSp .profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+       .SalonSp .salon-location {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+        .SalonSp .rating-stars {
+            color: #b8b8b8;
+            font-size: 1.5rem;
+        }
+
+        .SalonSp .rating-stars .filled {
+            color: #333;
+        }
+
+        .SalonSp .rating-number {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .SalonSp .review-count {
+            font-size: 1.1rem;
+            color: #666;
+            margin-left: 0.5rem;
+        }
+
+        .SalonSp .btn-book {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-right: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .SalonSp .btn-book:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .SalonSp .btn-whatsapp {
+            background-color: #fff;
+            color: #333;
+            border: 2px solid #333;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-right: 1rem;
+            transition: all 0.3s;
+        }
+
+        .SalonSp .btn-whatsapp:hover {
+            background-color: #f5f5f5;
+        }
+
+        .SalonSp .btn-instagram {
+            background-color: #fff;
+            color: #333;
+            border: 2px solid #333;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .SalonSp .btn-instagram:hover {
+            background-color: #f5f5f5;
+        }
+
+        .SalonSp .bio-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 1.5rem 0;
+        }
+
+       .SalonSp .booking-note {
+    font-size: 1rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem !important;
+}
+
+        .SalonSp .booking-note iconify-icon {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .SalonSp .category-tabs {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .SalonSp .category-tab {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .SalonSp .category-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #999;
+        }
+
+        .SalonSp .category-label {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .SalonSp .section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 1.5rem 0 1.5rem;
+    text-align: left;
+}
+
+        .SalonSp .services-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .SalonSp .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .SalonSp .service-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .SalonSp .service-duration {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .SalonSp .service-price {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .SalonSp .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .SalonSp .portfolio-item {
+            aspect-ratio: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .SalonSp .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .SalonSp .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .SalonSp .btn-see-more {
+            background-color: #f5f5f5;
+            color: #333;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .SalonSp .btn-see-more:hover {
+            background-color: #e0e0e0;
+        }
+
+        .SalonSp .reviews-section {
+            margin: 2.5rem 0;
+        }
+
+        .SalonSp .review-item {
+            margin-bottom: 2rem;
+        }
+
+        .SalonSp .review-rating {
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .SalonSp .review-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .SalonSp .review-author {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .SalonSp .more-stylists-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .SalonSp .stylist-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: #333;
+            transition: box-shadow 0.3s;
+        }
+
+        .SalonSp .stylist-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .SalonSp .stylist-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .SalonSp .stylist-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .SalonSp .stylist-link {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .SalonSp .about-salon-section {
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+
+        .SalonSp .salon-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #f5f5f5;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .SalonSp .badge-icon {
+            font-size: 2rem;
+        }
+
+        .SalonSp .badge-text {
+            font-weight: 600;
+        }
+
+        .SalonSp .salon-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .SalonSp .salon-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .SalonSp .vibe-badge {
+            display: inline-block;
+            background-color: #e6f7ff;
+            color: #0066cc;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .SalonSp .availability-section {
+            margin: 2rem 0;
+        }
+
+        .SalonSp .availability-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .SalonSp .day-name {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .SalonSp .day-hours {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .SalonSp .map-section {
+            margin: 2rem 0;
+        }
+
+        .SalonSp .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+
+        .SalonSp .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .SalonSp .location-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .SalonSp .sidebar {
+            position: sticky;
+            top: 2rem;
+        }
+
+        .SalonSp .contact-card {
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .SalonSp .contact-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .SalonSp .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .SalonSp .contact-item iconify-icon {
+            font-size: 1.5rem;
+            color: #666;
+        }
+
+        .SalonSp .amenities-card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .SalonSp .amenities-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .SalonSp .amenities-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .SalonSp .amenity-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .SalonSp .amenity-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .SalonSp .amenity-name {
+            font-size: 1rem;
+        }
+
+        .SalonSp .btn-show-all {
+            background-color: #f5f5f5;
+            color: #333;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .SalonSp .btn-show-all:hover {
+            background-color: #e0e0e0;
+        }
+
+        .SalonSp .modal-dialog-scrollable .modal-body {
+            max-height: 70vh;
+        }
+
+        .SalonSp .modal-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .SalonSp .modal-gallery-item {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .SalonSp .modal-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .SalonSp .amenities-highlight {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .SalonSp .amenities-highlight-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .SalonSp .highlight-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .SalonSp .highlight-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .SalonSp .highlight-icon {
+            font-size: 1.5rem;
+            color: #666;
+            min-width: 30px;
+        }
+
+        .SalonSp .highlight-content h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .SalonSp .highlight-content p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .SalonSp .profile-name {
+                font-size: 2rem;
+            }
+
+            .SalonSp .sidebar {
+                position: relative;
+                top: 0;
+                margin-top: 2rem;
+            }
+
+            .SalonSp .portfolio-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .SalonSp .navbar {
+                padding: 0.75rem 0;
+            }
+
+            .SalonSp .breadcrumb {
+                font-size: 0.85rem;
+            }
+
+            .SalonSp .login-link {
+                font-size: 0.85rem;
+            }
+
+            .SalonSp .profile-header {
+                padding: 1rem 0;
+            }
+
+            .SalonSp .profile-header .d-flex {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .SalonSp .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .SalonSp .profile-name {
+                font-size: 1.75rem;
+            }
+
+            .SalonSp .salon-location {
+                font-size: 1rem;
+            }
+
+            .SalonSp .rating-stars {
+                font-size: 1.2rem;
+            }
+
+            .SalonSp .rating-number {
+                font-size: 1.2rem;
+            }
+
+            .SalonSp .review-count {
+                font-size: 0.95rem;
+            }
+
+            .SalonSp .btn-book,
+            .SalonSp .btn-whatsapp,
+            .SalonSp .btn-instagram {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.95rem;
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .SalonSp .bio-text {
+                font-size: 1rem;
+            }
+
+            .SalonSp .category-tabs {
+                gap: 1rem;
+                justify-content: space-between;
+            }
+
+            .SalonSp .category-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+
+            .SalonSp .category-label {
+                font-size: 0.85rem;
+            }
+
+            .SalonSp .section-title {
+                font-size: 1.5rem;
+                margin: 2rem 0 1rem;
+            }
+
+            .SalonSp .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .SalonSp .modal-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .SalonSp .service-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .SalonSp .service-price {
+                align-self: flex-end;
+            }
+
+            .SalonSp .salon-badge {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+            }
+
+            .SalonSp .salon-rating {
+                font-size: 1rem;
+            }
+
+            .SalonSp .availability-item {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+
+            .SalonSp .map-container {
+                height: 300px;
+            }
+
+            .SalonSp .contact-card,
+            .SalonSp .amenities-card {
+                padding: 1rem;
+            }
+
+            .SalonSp .contact-title,
+            .SalonSp .amenities-title {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .SalonSp .profile-name {
+                font-size: 1.5rem;
+            }
+
+            .SalonSp .btn-book,
+            .SalonSp .btn-whatsapp,
+            .SalonSp .btn-instagram {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .SalonSp .category-tabs {
+                gap: 0.5rem;
+            }
+
+            .SalonSp .category-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+            }
+
+            .SalonSp .category-label {
+                font-size: 0.75rem;
+            }
+
+            .SalonSp .section-title {
+                font-size: 1.25rem;
+            }
+
+            .SalonSp .more-stylists-title {
+                font-size: 1.25rem;
+            }
+
+            .SalonSp .stylist-card {
+                padding: 0.75rem;
+            }
+
+            .SalonSp .map-container {
+                height: 250px;
+            }
+        }
+
+/*********************************************
+ Salon Specialist Profile page css End here
+*********************************************/
