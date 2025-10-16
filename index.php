@@ -11,15 +11,15 @@
 
 		   <div class="CategoryBusiness">
 			<ul class="categoryList">
-				<li><a href="#"><img src="images/new-images/woman-hair.png" alt=""> Hair Salon</a></li>
-				<li><a href="#"><img src="images/new-images/stylist.png" alt=""> Barbershop</a></li>
-				<li><a href="#"><img src="images/new-images/nail-polish.png" alt=""> Nail Salon</a></li>
-				<li><a href="#"><img src="images/new-images/skincare.png" alt=""> Skin Care</a></li>
-				<li><a href="#"><img src="images/new-images/tinting.png" alt=""> Brows & Lashes</a></li>
-				<li><a href="#"><img src="images/new-images/facial-massage.png" alt=""> Massage</a></li>
-				<li><a href="#"><img src="images/new-images/makeover.png" alt=""> Makeup</a></li>
-				<li><a href="#"><img src="images/new-images/lotus.png" alt=""> Wellness & Day Spa</a></li>
-				<li><a href="#"><img src="images/new-images/circle.png" alt=""> More...</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/woman-hair.png" alt=""> Hair Salon</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/stylist.png" alt=""> Barbershop</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/nail-polish.png" alt=""> Nail Salon</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/skincare.png" alt=""> Skin Care</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/tinting.png" alt=""> Brows & Lashes</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/facial-massage.png" alt=""> Massage</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/makeover.png" alt=""> Makeup</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/lotus.png" alt=""> Wellness & Day Spa</a></li>
+				<li><a href="all-specialists.php"><img src="images/new-images/circle.png" alt=""> More...</a></li>
 			</ul>
 
 		   </div>
@@ -266,7 +266,7 @@
   </div>
 </div> -->
 <div class="col-lg-12 mt-5 text-center">
-	<a href="#" class="btn-default">View More</a>
+	<a href="all-specialists.php" class="btn-default">View More</a>
 </div>
 </div> <!-- row -->
   </div> <!-- container -->

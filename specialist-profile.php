@@ -48,7 +48,7 @@
                 <span class="review-count">32 reviews</span>
             </div> -->
             <div class="d-flex flex-wrap gap-2 connectBtns">
-                <a href="#" class="btn btn-book">Contact Us</a>
+                <a href="#" class="btn btn-book" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a>
                 <a href="#" class="btn btn-whatsapp">
                     <iconify-icon icon="mdi:whatsapp"></iconify-icon> WhatsApp
                 </a>
@@ -534,6 +534,40 @@
             </div>
         </div>
     </div>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Specialist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMobile" class="form-label">Mobile Number</label>
+                        <input type="tel" class="form-control" id="contactMobile" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="contactMessage" rows="4" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
     </div>
 <?php include "footer.php" ?>
